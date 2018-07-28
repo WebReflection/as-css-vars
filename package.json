@@ -1,6 +1,6 @@
 {
   "name": "as-css-vars",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "convert a generic object into CSS variables",
   "main": "cjs/index.js",
   "module": "esm/index.js",
