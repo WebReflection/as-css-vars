@@ -1,6 +1,6 @@
 # as-css-vars
 
-[![Coverage Status](https://coveralls.io/repos/github/WebReflection/as-css-vars/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/as-css-vars?branch=master) [![Build Status](https://travis-ci.org/WebReflection/as-css-vars.svg?branch=master)](https://travis-ci.org/WebReflection/as-css-vars) [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://opensource.org/licenses/ISC)
+[![Coverage Status](https://coveralls.io/repos/github/WebReflection/as-css-vars/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/as-css-vars?branch=master) [![Build Status](https://travis-ci.com/WebReflection/as-css-vars.svg?branch=master)](https://travis-ci.com/WebReflection/as-css-vars) [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://opensource.org/licenses/ISC)
 
 This is a micro-utility to convert a generic object into CSS variables, as string.
 
