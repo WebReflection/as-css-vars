@@ -1,0 +1,31 @@
+{
+  "name": "as-css-vars",
+  "version": "0.0.0",
+  "description": "convert a generic object into CSS variables",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "unpkg": "min.js",
+  "scripts": {
+    "build": "npm run cjs && npm test && npm run esm && npm run min && npm run size",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "cjs": "cp index.js cjs/index.js; echo 'module.exports = asCSSVars;' >> cjs/index.js",
+    "esm": "cp index.js esm/index.js; echo 'export default asCSSVars;' >> esm/index.js;",
+    "min": "echo '/*! (c) 2018, Andrea Giammarchi, (ISC) */'>min.js && uglifyjs index.js --support-ie8 -c -m >> min.js",
+    "size": "cat index.js | wc -c;cat min.js | wc -c;gzip -c9 min.js | wc -c",
+    "test": "istanbul cover test/index.js"
+  },
+  "keywords": [
+    "css",
+    "variables",
+    "vars",
+    "js",
+    "style"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "ISC",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "uglify-js": "^3.4.6"
+  }
+}
